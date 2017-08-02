@@ -4,7 +4,11 @@ var register = require("../controller/register.js");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Lucking' });
+});
+
+router.get('/team', function(req, res, next) {
+  res.render('team', { title: 'Lucking' });
 });
 
 router.get('/registro', function(req, res, next) {
