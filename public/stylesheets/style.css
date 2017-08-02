@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background: inherit;
 }
 
 a {
@@ -9,4 +12,12 @@ a {
 
 html {
   background: url(../img/backfull.png) repeat center center fixed; 
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
 }
