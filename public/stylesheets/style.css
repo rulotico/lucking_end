@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+html {
+  background: url(../img/backfull.png) repeat center center fixed; 
+}
