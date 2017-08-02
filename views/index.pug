@@ -1,47 +1,46 @@
 extends layout
 
 block content
+  br
+  h1.pink.text-center The spontaneous experience that dares you to explore the city📱
+  br
+  .row.section-main
+    .col-sm-6.text-center
+      img.animated.rubberBand.infinite(src="img/lentes.png")
+    .col-sm-6
+      h1.pink Log in with facebook
+      p We use facebook to identify your interests
+  .row.section-main
+    .col-sm-6.text-right
+      h1.pink Choose your interests
+      p We will match this interests vs the ones you have on facebook so we can analyze them and hand pick the coolest venues in town for your plan.
+    .col-sm-6.text-center
+      img.swing.animated.infinite(src="img/patineta.png")
+  .row.section-main
+    .col-sm-6.text-center 
+      img.animated.jello.infinite(src="img/pal.png")
+    .col-sm-6.text-left
+      h1.pink We tell you where to go
+      p Either you choose to go on your own or uber, yay you will get the tool to find that mysterious place we have prepared for you.
+  br
+  br
+  .form-final#form.col-sm-6.col-sm-offset-3
+    .text-center
+      h1 We dare you to pre-register🔥
+    br
+    br
+    label Name
+    input#name.input-lg.form-control
+    br
+    label Email
+    input#email.input-lg.form-control
+    br
+    .btn.btn-default.full-btn.btn-lg Do it
+    br
+    br
+    .message.text-center.pink.animated.fadeIn.infinite
 
-  <nav class="text-right">
-    <ul>
-      <li class="active"><a href="#">Pre-Register</a></li>
-      <li><a href="#">Learn more</a></li>
-      <li><a href="#">About us</a></li>
-    </ul>
-  </nav>
 
-  <img class="center img-responsive" src="../img/logo.png" height="90px" align="middle">
 
-  <div class="container">
-    <p>Log in with facebook ---> We use facebook to identify your interests</p>
-    <p>2. Choose your interests----> We will match this interests vs the ones you have on facebook so we can analyze them and
-      hand pick the coolest venues in town for your plan. </p>
-    <p>We tell you where to go ---> Either you choose to go on your own or uber, yay you will get the tool to find that mysterious
-      place we have prepared for you. </p>
-    <p>Enjoy a epic experience---> The rest is up to you!!</p>
-    <div class="row">
-      <div class="col-md-3">hola</div>
-      <div class="col-md-6">hola</div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">hola</div>
-      <div class="col-md-3">hola</div>
-    </div>
 
-    <br><br>
-
-    <div class="text-center">
-      <form role="form">
-        <div class="form-group">
-          <label>Name</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label>Email address</label>
-          <input type="email" class="form-control" placeholder="Enter email">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div>
-
-  </div>
+  

@@ -2,12 +2,30 @@ doctype html
 html
   head
     title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/animate.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css')
+    link(rel='stylesheet', href='/stylesheets/custom_layout.css')
+    
+
+
+
   body
-    block content
+    nav
+      .top-logo.text-left
+        img.animated.fadeInDown(src="../img/logo.png")
+
+      ul.text-right
+        li.active
+          a(href='#form') Pre-Register
+        li
+          a(href='#') Team
+        li
+          a(href='#') How to?
+
+    .container.main-cont
+        block content
 
     script(src='http://code.jquery.com/jquery-3.2.1.js')
-    script(src='/scripts/team.js')
+    script(src='javascripts/main.js')

@@ -12,7 +12,6 @@ router.get('/team', function(req, res, next) {
 });
 
 router.get('/registro', function(req, res, next) {
-
   name=req.query.name;
   email=req.query.email;
   register.register(name,email);
