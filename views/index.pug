@@ -2,14 +2,39 @@ extends layout
 
 block content
 
-  .nav 
-    ul
-      li About us
-      li Learn more
-      li Register
-  img(src='../img/logo.png', alt='Lucking', height='100')
-  .container
-    p Log in with facebook ---> We use facebook to identify your interests
-    p 2. Choose your interests----> We will match this interests vs the ones you have on facebook so we can analyze them and hand pick the coolest venues in town for your plan. 
-    p We tell you where to go ---> Either you choose to go on your own or uber, yay you will get the tool to find that mysterious place we have prepared for you. 
-    P Enjoy a epic experience---> The rest is up to you!!
+  <nav class="text-right">
+    <ul>
+      <li class="active"><a href="#">Pre-Register</a></li>
+      <li><a href="#">Learn more</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+  </nav>
+  
+  <img class="center img-responsive" src="../img/logo.png" height="90px" align="middle">
+
+  <div class="container">
+    <p>Log in with facebook ---> We use facebook to identify your interests</p>
+    <p>2. Choose your interests----> We will match this interests vs the ones you have on facebook so we can analyze them and hand pick the coolest venues in town for your plan. </p>
+    <p>We tell you where to go ---> Either you choose to go on your own or uber, yay you will get the tool to find that mysterious place we have prepared for you. </p>
+    <p>Enjoy a epic experience---> The rest is up to you!!</p>
+    <div class="row">
+      <div class="col-md-3">hola</div>
+      <div class="col-md-6">hola</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">hola</div>
+      <div class="col-md-3">hola</div>
+    </div>
+
+    <div class="text-center">
+      <form action="">
+        <p>Email</p>
+        <input type="email">
+        <p>Name</p>
+        <input type="text">
+        <p>Write us something</p>
+        <input type="text"><br><br>
+        <button>Send</button>
+      </form>
+  </div>
+  </div>
