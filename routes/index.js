@@ -20,7 +20,7 @@ router.get('/registro', function(req, res, next) {
   register.register(name,email);
 });
 
-
+// PLACES ENDPOINT
 
 router.get('/places', function(req, res, next) {
 
