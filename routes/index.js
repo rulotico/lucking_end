@@ -28,7 +28,13 @@ router.get('/places', function(req, res, next) {
   cost=req.query.cost;
   distance=req.query.distance;
 
-  places.places("29.941082","-90.078772",categories,cost,distance,req,res);
+  if (!categories || !cost || !distance) {
+  		
+  }else{
+  	places.places("29.941082","-90.078772",categories,cost,distance,req,res);
+  }
+
+  
 
 });
 
