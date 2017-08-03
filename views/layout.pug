@@ -1,3 +1,4 @@
+
 doctype html
 html
   head
@@ -6,11 +7,11 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/animate.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/team.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css')
     link(rel='stylesheet', href='/stylesheets/custom_layout.css')
-    
-
-
-
+ 
   body
     nav
       .top-logo.text-left
@@ -20,12 +21,13 @@ html
         li.active
           a(href='#form') Pre-Register
         li
-          a(href='#') Team
+          a(href='/team') Team
         li
-          a(href='#') How to?
+          a(href='/') How to?
 
     .container.main-cont
         block content
 
+    script(src='/scripts/team.js')
     script(src='http://code.jquery.com/jquery-3.2.1.js')
     script(src='javascripts/main.js')
