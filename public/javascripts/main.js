@@ -83,11 +83,6 @@ $btn.click(function (event) {
 
 		});
 
-
-
-
 	}
-
-
-
+	
 });
