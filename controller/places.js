@@ -69,9 +69,9 @@ request(url, function (error, response, body) {
 
 					var lucky={
 						name:"NOT",
-						venue:"Lucking u_u"
+						venue:"Lucky u_u"
 					}
-					console.log(lucky);
+
 				}else{
 
 
@@ -85,6 +85,8 @@ request(url, function (error, response, body) {
 						name:random.venue.name,
 						venue:random.venue.location.address
 					}
+
+					res.send(lucky);
 
 				}
 
