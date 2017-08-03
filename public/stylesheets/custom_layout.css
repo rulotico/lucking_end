@@ -13,12 +13,13 @@
         left: 10px;
             z-index: 20;
 
-
 }
 
 .main-cont{
-	margin-top: 100px;
+
 	margin-bottom: 100px;
+	margin-top: -70px;
+
 }
 
 .section-main{
@@ -51,3 +52,15 @@ label{
 	background-color: #F42F89;
 	border: 0; 
 }
+
+.phone{
+	    height: 354px;
+}
+
+
+
+.phone img{
+	height: 400px;
+}
+
+
