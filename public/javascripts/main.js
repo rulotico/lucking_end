@@ -1,23 +1,23 @@
-function validarContenido(input){
+function validarContenido(input) {
 
-	form_text=$(input).val();
-	if(form_text == ""){
-			
-			console.log("vacio");
-			return false;
+	form_text = $(input).val();
+	if (form_text == "") {
 
-	}else{
+		console.log("vacio");
+		return false;
 
-		cantidad=input.val().length;
+	} else {
+
+		cantidad = input.val().length;
 		if (cantidad > 1) {
-			
-			
+
+
 			// $("#message_validation").html("bien");
 			console.log("bien name");
 			return true;
 
-		}else{
-			
+		} else {
+
 			console.log("mal a");
 			return false;
 		}
@@ -37,43 +37,57 @@ function validateEmail(sEmail) {
 }
 
 
+$btn = $(".btn")
 
-$btn=$(".btn")
+$name = $("#name");
+$email = $("#email");
 
-$name=$("#name");
-$email=$("#email");
-
-$btn.click(function(event) {
-      event.preventDefault();
-      
-
-          if ($name.val()== ""  && $email.val() == "" ) {
-
-             console.log("vacio");
-
-             $(".message").html("Hey!, the form is empty");
-
-          }else if( validarContenido($name)==false){
-              $(".message").html("Maybe, your name it's too short");
-          }else if(validateEmail($email.val())==false){
-               $(".message").html("Ups that mail its incorrect");
-          }else{
-          	
-          	$(".form-final").html("<h1 class='animated fadeInDown pink'>Get ready for new experiences comming your way. Are you ready?</h1>");
+$btn.click(function (event) {
+	event.preventDefault();
 
 
+	if ($name.val() == "" && $email.val() == "") {
 
-				$.get("/registro",{name:$name.val(),email:$email.val()},function(data){
+		console.log("vacio");
 
-	            		console.log(data);
+		$(".message").html("Hey!, the form is empty");
 
-	         	 });
+	} else if (validarContenido($name) == false) {
+		$(".message").html("Maybe, your name it's too short");
+	} else if (validateEmail($email.val()) == false) {
+		$(".message").html("Ups that mail its incorrect");
+	} else {
+
+		var script_url = "https://script.google.com/macros/s/AKfycbyC8kO1HiVt23juAK5WDsNg1wXdJAg6mCKqJFkLzMwizvMlnALu/exec";
+		// Make an AJAX call to Google Script
+		function insert_value() {
+			var id1 = $("#name").val();
+			var name = $("#email").val();
+			var url = script_url + "?callback=ctrlq&name=" + name + "&id=" + id1 + "&action=insert";
+			var request = jQuery.ajax({
+				crossDomain: true,
+				url: url,
+				method: "GET",
+				dataType: "jsonp"
+			});
+		}
+		insert_value()
+
+		$(".form-final").html("<h1 class='animated fadeInDown pink'>Get ready for new experiences comming your way. Are you ready?</h1>");
+
+
+
+		$.get("/registro", { name: $name.val(), email: $email.val() }, function (data) {
+
+			console.log(data);
+
+		});
 
 
 
 
-          }
+	}
 
 
 
-  });
+});
