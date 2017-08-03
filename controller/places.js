@@ -61,19 +61,33 @@ request(url, function (error, response, body) {
 
 				random=venues[Math.floor(Math.random()*venues.length)];
 
-				console.log("*****************")
-				console.log(random.venue.name);
-				console.log(random.venue.location.address);
-				console.log("*****************")
-				console.log("*****************")
 
 
-				var lucky={
-					name:random.venue.name,
-					venue:random.venue.location.address
+
+
+				if (random==undefined) {
+
+					var lucky={
+						name:"NOT",
+						venue:"Lucking u_u"
+					}
+					console.log(lucky);
+				}else{
+
+
+					console.log("*****************")
+					console.log(random.venue.name);
+					console.log(random.venue.location.address);
+					console.log("*****************")
+					console.log("*****************")
+
+					var lucky={
+						name:random.venue.name,
+						venue:random.venue.location.address
+					}
+
 				}
 
-				res.send(lucky);
 
 				});
 
