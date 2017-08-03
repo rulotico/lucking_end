@@ -85,3 +85,35 @@ li.active a {
 }
 
 
+@media(max-width: 780px){
+
+  .nav{
+    margin:0px;
+  }
+  nav ul{
+    display: none;
+  }
+  body{
+        margin-top: 166px;
+  }
+  .top-logo{
+    text-align: center;
+  }
+  .top-logo img {
+    height: 125px !important;
+    position: absolute !important;
+    top: 18px !important;
+    left: inherit !important;
+     margin-left: -62px !important;
+    z-index: 20 !important;
+}
+
+.phone img {
+    height: auto;
+    width: 100%;
+}
+
+
+
+}
+
