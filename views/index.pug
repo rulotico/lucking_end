@@ -30,61 +30,32 @@ block content
       p Either you choose to go on your own or uber, yay you will get the tool to find that mysterious place we have prepared for you.
   br
   br
+  .row
+    .form-final#form.col-sm-6.col-sm-offset-3
+      .text-center
+        h1 We dare you to pre-register🔥
+      br
+      br
+      label Name
+      input#name.input-lg.form-control
+      br
+      label Email
+      input#email.input-lg.form-control
+      br
+      .btn.btn-default.full-btn.btn-lg Do it
+      br
+      br
+      .message.text-center.pink.animated.fadeIn.infinite
 
-  html
-  style.
-    table,
-    th,
-    td {
-    margin: 10px 0;
-    border: solid 1px #333;
-    padding: 2px 4px;
-    font: 15px Verdana;
-    }
-    th {
-    font-weight: bold;
-    
-    #loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-bottom: 16px solid blue;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-    visibility: hidden;
-    }
-    @-webkit-keyframes spin {
-    0% {
-    -webkit-transform: rotate(0deg);
-    }
-    100% {
-    -webkit-transform: rotate(360deg);
-    }
-    }
-    @keyframes spin {
-    0% {
-    transform: rotate(0deg);
-    }
-    100% {
-    transform: rotate(360deg);
-    }
-    }
-  .form-final#form.col-sm-6.col-sm-offset-3
-    .text-center
-      h1 We dare you to pre-register🔥
-    br
-    br
-    label Name
-    input#name.input-lg.form-control
-    br
-    label Email
-    input#email.input-lg.form-control
-    br
-    .btn.btn-default.full-btn.btn-lg Do it
-    br
-    br
-    .message.text-center.pink.animated.fadeIn.infinite
+  .row
+    .col-md-12.text-center.partners
+      br 
+      small They trust on us
+      br
+    .col-md-4.col-md-offset-2.text-center.par 
+      img(src="img/cafe_p.png")
+    .col-md-4.text-center.par
+      img(src="img/haruno.png")
+
 
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js')
